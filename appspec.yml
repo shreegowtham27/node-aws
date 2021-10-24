@@ -1,10 +1,10 @@
-
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ubuntu/helloworld
+  - source: /helloworld
+    destination: /var/www/html/helloworld
 hooks:
   ApplicationStart:
     - location: scripts/start_server.sh
       timeout: 300
+      runas: root
