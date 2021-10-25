@@ -5,6 +5,6 @@ files:
     destination: /var/www/html/helloworld
 hooks:
   ApplicationStart:
-    - location: /var/www/html/helloworld/scripts/start_server.sh
+    - location: /scripts/start_server.sh
       timeout: 300
       runas: root
